@@ -7,6 +7,10 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  getUrl() {
+    return "url('../assets/main_menu.bmp')";
+  }
+  
   constructor(public navCtrl: NavController) {
 
   }

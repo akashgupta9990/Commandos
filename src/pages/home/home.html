@@ -1,3 +1,18 @@
-<div class="panel panel-default" [ngStyle]="{'background-image': getUrl(),'height' : '100vh'}">
-   
-</div>
+<ion-grid id="mainmenu">
+   <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col col-8>
+         <div class="center menu">
+            <div *ngFor="let label of mainmenu_labels" class="{{label.class}} label">
+               <div *ngFor="let letter of label.keywords">
+                  <div class="labels-container">
+                     <img [src]="fontsImage[letter]" class="top1" [ngStyle]="{'font-size': label.size}">
+                     <!-- <img [src]="fontsImage[letter + '_mask']" class="bottom"> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </ion-col>
+      <ion-col col-2></ion-col>
+   </ion-row>
+</ion-grid>

@@ -7,7 +7,8 @@
 .label {
    display: flex;
    padding-top: 10px;
-   margin: 0 auto;
+  //  margin: 0 auto;
+  margin-left: 30%;
 }
 
 .center {
@@ -27,11 +28,21 @@
   transition: opacity 0.5s;
 }
 
-.label:hover .top {
-  opacity: 0;
+.blinkImage:hover .blink {
+  animation: blink normal 0.3s infinite ease-in-out;
 }
 
 .menu {
   position: relative;
   top: 15%;
+}
+
+@keyframes blink {
+  0% {opacity:1;}
+  50% {opacity:0.7;}
+  100% {opacity:1;}
+} 
+
+.disabled {
+  opacity: 0.5;
 }

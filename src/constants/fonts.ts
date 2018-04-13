@@ -1,4 +1,4 @@
-export const Fonts = {
+export const images = {
    // Brown Small
    'zero_brown_small': '../assets/fonts/brown_small/00.png',
    'zero_brown_small_mask': '../assets/fonts/brown_small/00.mask.png',
@@ -599,5 +599,10 @@ export const Fonts = {
    'underscore_grey_small': '../assets/fonts/grey_small/underscore.png',
    'underscore_grey_small_mask': '../assets/fonts/grey_small/underscore.mask.png',
    'no_image_grey_small': '../assets/fonts/grey_small/no_image.png',
-   'no_image_grey_small_mask': '../assets/fonts/grey_small/no_image.mask.png'
+   'no_image_grey_small_mask': '../assets/fonts/grey_small/no_image.mask.png',
+   // Audio Bar
+   'audiobar': '../assets/menu/audio_bar.png',
+   'audiobar_mask': '../assets/menu/audio_bar.mask.png',
+   'audioslider': '../assets/menu/audio_button.png',
+   'audioslider_mask': '../assets/menu/audio_button.mask.png'
 };

@@ -5,7 +5,7 @@ import { LoadGameLabels } from '../../constants/menulabels';
 import { OptionsLabels } from '../../constants/menulabels';
 import { QuitGameLabels } from '../../constants/menulabels';
 // import * as _ from "underscore";
-import { Fonts } from "../../app/fonts";
+import { images } from "../../constants/fonts";
 
 @Component({
   selector: 'page-home',
@@ -13,7 +13,7 @@ import { Fonts } from "../../app/fonts";
 })
 export class HomePage {
   mainmenu_labels = MenuLabels;
-  fontsImage = Fonts;
+  fontsImage = images;
   
   constructor() {
     this.initializeMenu();
@@ -50,6 +50,13 @@ export class HomePage {
         this.mainmenu_labels = MenuLabels;
         break;
     }
+  }
+
+  playAudio(audioPath) {
+    var audio = new Audio();
+    audio.src = audioPath;
+    audio.load();
+    audio.play();
   }
 
 }

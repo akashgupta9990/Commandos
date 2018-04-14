@@ -1,4 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
+import { NativeAudio } from '@ionic-native/native-audio';
 import { MenuLabels, NewGameLabels, LoadGameLabels, OptionsLabels, QuitGameLabels } from '../../constants/menulabels';
 import { images } from "../../constants/fonts";
 

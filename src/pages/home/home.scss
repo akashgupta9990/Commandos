@@ -7,16 +7,11 @@
 .label {
    display: flex;
    padding-top: 10px;
-  //  margin: 0 auto;
   margin-left: 30%;
 }
 
 .center {
    display: grid;
-}
-
-.labels-container{
-   position: relative;
 }
 
 .labels-container .top {
@@ -45,4 +40,13 @@
 
 .disabled {
   opacity: 0.5;
+}
+
+.volumebar {
+  position:relative;
+}
+
+.volumebar1 {
+  position:absolute;
+  cursor: pointer;
 }

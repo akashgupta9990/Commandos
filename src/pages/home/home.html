@@ -4,7 +4,7 @@
       <ion-col col-8>
          <div class="center menu">
             <div *ngFor="let label of mainmenu_labels" class="{{label.class}} label" (click)=clickLabels(label.name) [ngClass]="{'disabled' : label.disabled, 'blinkImage' : !label.disabled}">
-               <div *ngFor="let letter of label.keywords">
+               <div *ngFor="let letter of label.keywords; let i = index" [class]="label.class + i">
                   <div class="labels-container">
                      <img [src]="fontsImage[letter]" [ngStyle]="{'font-size': label.size}" class="top" [ngClass]="{'blink': label.blink}">
                      <img [src]="fontsImage[letter + '_mask']" class="bottom">
